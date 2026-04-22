@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Log - AI Coder</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+  box-sizing: border-box;
+}
+
+body {
+  background: #070b14;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* BACK BUTTON */
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 14px;
+  border-radius: 10px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+
+  color: white;
+  cursor: pointer;
+
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.back:hover {
+  border-color: #00ffcc;
+  transform: scale(1.03);
+}
+
+/* HEADER */
+h1 {
+  color: #00ffcc;
+  font-size: 22px;
+}
+
+p {
+  opacity: 0.7;
+  font-size: 13px;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+/* TIMELINE */
+.timeline {
+  margin-top: 25px;
+  border-left: 2px solid rgba(255,255,255,0.1);
+  padding-left: 20px;
+}
+
+.item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 5px;
+
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+
+  background: #00ffcc;
+}
+
+.version {
+  font-size: 14px;
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 5px;
+  line-height: 1.6;
+}
+
+/* CARD */
+.card {
+  margin-top: 20px;
+  padding: 15px;
+
+  border-radius: 12px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+</style>
+</head>
+
+<body>
+
+<!-- BACK -->
+<div class="back" onclick="goBack()">
+  ← Back to SOLARA AI
+</div>
+
+<h1>Change Log</h1>
+<p>System updates, improvements, and new features of AI Coder platform.</p>
+
+<!-- CURRENT STATUS -->
+<div class="card">
+  <div class="version">System Status</div>
+  <div class="text">
+    AI Coder is currently in active development. All core modules are stable and operational.
+  </div>
+</div>
+
+<!-- TIMELINE -->
+<div class="timeline">
+
+
+
+  <div class="item">
+    <div class="version">v1.2</div>
+    <div class="text">
+    upcoming updates!
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="version">v1.0 - current version</div>
+    <div class="text">
+      add - particles 
+      add - new project 
+    </div>
+  </div>
+
+</div>
+
+<script>
+function goBack() {
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
